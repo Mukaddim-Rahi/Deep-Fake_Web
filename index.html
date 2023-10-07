@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <mata http-equiv="X-UA-Compatible" content="IE-edge"></mata>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Website with Login and Registration | Codehal </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h2 class="logo">Logo</h2>
+
+    </header>
+
+
+    <div class="wrapper">
+        <div class="container">
+            <h2>Login</h2>
+            <form id="login-form">
+                <input type="text" id="email" placeholder="Email">
+                <input type="password" id="password" placeholder="Password">
+                <button type="button" id="login-button">Login</button>
+            </form>
+            <!-- <p class="register-link">Don't have an account? <a href="register.html">Register</a></p> -->
+            <p class="register-link">Don't have an account? <a href="signup.html">Register</a></p>
+        </div>
+    </div>
+    <script>
+        
+// JavaScript for handling login
+const loginButton = document.getElementById('login-button');
+const emailInput = document.getElementById('email');
+const passwordInput = document.getElementById('password');
+
+loginButton.addEventListener('click', () => {
+    const email = emailInput.value;
+    const password = passwordInput.value;
+
+    // You can add your login logic here
+    // For this example, we'll just show an alert
+    if (email && password) {
+        alert(`Logged in with email: ${email}`);
+    } else {
+        alert('Please enter both email and password.');
+    }
+});
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

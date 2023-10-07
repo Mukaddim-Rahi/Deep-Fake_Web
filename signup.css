@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Reem+Kufi+Fun:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("background.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo {
+    font-size: 2rem;
+    color: #fff;
+    user-select: none;
+}
+
+img.logo {
+    width: 150px; /* Set the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.wrapper {
+    position: relative;
+    width: 48rem;
+    height: 58rem;
+
+    background-color: rgb(182, 234, 244);
+    border: 2px solid rgba(255, 255, 255, 5);
+    border-radius: 20px;
+    backdrop-filter: blue(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 15);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    padding: 40px;
+}
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-size: xxx-large;
+    color: #162938;
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+    width: 100%;
+    padding: 16px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    
+}
+
+button {
+    
+    width: 100%;
+    padding: 10px;
+
+    font-size: x-large;
+    background-color: #162938;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #d4dee8;
+}
+/* CSS for styling placeholders with a font size of 1.3rem */
+#name::placeholder,
+#email::placeholder,
+#contact::placeholder,
+#address::placeholder,
+#password::placeholder {
+    font-size: 1.3rem;
+}
+
+
+
+.login-link {
+    margin-top: 14px;
+    text-align: center;
+font-size: 1.3rem;
+}
